@@ -1,0 +1,7 @@
+lab2/data
+.venv
+lab2/models/__pycache__/googlenet.cpython-314.pyc
+lab2/models/__pycache__/lenet.cpython-314.pyc
+lab2/__pycache__/train.cpython-314.pyc
+lab2/data_utils/__pycache__/mnist.cpython-314.pyc
+lab2/data_utils/__pycache__/vinafood21.cpython-314.pyc
