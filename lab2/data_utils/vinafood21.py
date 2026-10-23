@@ -53,7 +53,7 @@ class VinaFood21(Dataset):
 
 def collate_fn(samples):
     images = [sample["image"] for sample in samples]
-    labels = [sample["image"] for sample in samples]
+    labels = [sample["label"] for sample in samples]
 
     images = torch.stack(images, dim=0)
     labels = torch.tensor(labels, dtype=torch.long)

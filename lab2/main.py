@@ -32,7 +32,10 @@ def get_dataloader(dataset_name, batch_size=32):
         test_dataset = VinaFood21("data/VinaFood21/test", (224, 224))
         num_classes = 21
 
-    collate_fn = mnist_collate
+    if dataset_name == "MNIST":
+        collate_fn = mnist_collate
+    else:
+        collage_fn = vina_collate
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn)
 
